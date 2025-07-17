@@ -16,8 +16,8 @@ const portfolioData = {
       {"name": "Machine Learning", "level": 94},
       {"name": "Data Analytics", "level": 91},
       {"name": "SQL", "level": 89},
-      {"name": "R", "level": 82},
-      {"name": "Tableau", "level": 86}
+      {"name": "AWS", "level": 82},
+      {"name": "PowerBI", "level": 86}
     ],
     "management": [
       {"name": "Stakeholder Management", "level": 93},
@@ -27,75 +27,103 @@ const portfolioData = {
     ]
   },
   "projects": [
-    {
-      "title": "AI-Powered Customer Segmentation",
-      "description": "Developed a machine learning model using Python and TensorFlow to segment customers based on behavior patterns, improving marketing ROI by 35%.",
-      "technologies": ["Python", "TensorFlow", "Scikit-learn", "Pandas"],
-      "impact": "35% improvement in marketing ROI",
-      "details": "Built an end-to-end customer segmentation pipeline using advanced clustering algorithms and deep learning techniques. The model processes over 1M customer records and provides real-time insights for marketing campaigns."
-    },
-    {
-      "title": "Generative AI Content Platform",
-      "description": "Led the development of a GenAI platform that generates personalized content recommendations, increasing user engagement by 45%.",
-      "technologies": ["GPT-4", "LangChain", "Azure OpenAI", "Python"],
-      "impact": "45% increase in user engagement",
-      "details": "Architected a scalable GenAI solution that leverages large language models for personalized content generation. Implemented prompt engineering and fine-tuning strategies to improve content quality and relevance."
-    },
-    {
-      "title": "Real-time Analytics Dashboard",
-      "description": "Created an interactive dashboard using Tableau and Python that provides real-time insights into business metrics, enabling data-driven decision making.",
-      "technologies": ["Tableau", "Python", "SQL", "Azure"],
-      "impact": "50% faster decision making",
-      "details": "Developed a comprehensive analytics dashboard that consolidates data from multiple sources and provides interactive visualizations. The dashboard serves over 200 users across different departments."
-    },
-    {
-      "title": "Predictive Maintenance Model",
-      "description": "Built a machine learning model to predict equipment failures, reducing downtime by 60% and maintenance costs by 40%.",
-      "technologies": ["Python", "Time Series Analysis", "Azure ML", "IoT"],
-      "impact": "60% reduction in downtime",
-      "details": "Implemented a predictive maintenance solution using IoT sensor data and time series forecasting. The model analyzes equipment performance patterns and predicts failures before they occur."
-    }
+  {
+    "title": "Likelihood of Approval Model for Clinical Trials",
+    "description": "Developed a predictive model evaluating the likelihood of approval for assets and clinical trials using ensemble machine learning techniques. Leveraged diverse clinical trial data to enable strategic decisions in the pharmaceutical sector.",
+    "technologies": ["Python", "SQL", "Azure", "Tableau"],
+    "impact": "Optimized decision-making processes for clinical trial success, reducing investment risk and improving resource allocation.",
+    "details": "Implemented an ensemble of probabilities analyzing relationships between trial and asset attributes and success/failure. Integrated multiple pharma datasets to build a comprehensive final dataset, enabling faster and more accurate clinical trial approvals."
+  },
+  {
+    "title": "Scalable AI/ML, NLP, and Generative AI Algorithm Integration",
+    "description": "Designed and implemented scalable AI/ML, NLP, and Generative AI algorithms integrated into software products, enhancing functionalities such as chatbots, recommendation engines, and text summarization modules.",
+    "technologies": ["Python", "TensorFlow", "Keras", "SpaCy", "GPT-3.5", "Llama-2", "Phi-2", "Azure", "AWS SageMaker", "Databricks"],
+    "impact": "Enabled advanced AI features in products, driving innovation and improving user engagement and product value.",
+    "details": "Developed transformer-based deep learning models, deployed on cloud platforms with APIs for seamless integration, continuously improving through stakeholder feedback and iterative development."
+  },
+  {
+    "title": "Automated Systematic Literature Review for Pharma",
+    "description": "Built an automated product using Azure OpenAI and custom prompt libraries to streamline the inclusion and exclusion of research papers and white papers related to drug and medical device safety and efficacy.",
+    "technologies": ["Azure OpenAI", "Custom Prompt Engineering", "API Development", "NLP"],
+    "impact": "Significantly reduced manual review effort by automating evidence review processes, enhancing regulatory compliance and assessment accuracy.",
+    "details": "System automated paper selection based on PICOS criteria tailored to client-specific requirements, eliminating the need for two dedicated human reviewers."
+  },
+  {
+    "title": "BERT-based Line of Therapy Extraction for Clinical Trials",
+    "description": "Developed and deployed a BERT-based NLP model to extract 'line of therapy' information from clinical trial inclusion criteria, streamlining patient eligibility assessment.",
+    "technologies": ["Python", "Transformers (BERT)", "HuggingFace", "Azure", "AWS"],
+    "impact": "Improved clinical trial efficiency and targeted therapy development by automating eligibility determination and reducing manual review time.",
+    "details": "Built models that parsed unstructured clinical trial criteria and extracted key therapeutic line information, enabling faster and more precise patient-trial matching."
+  },
+  {
+    "title": "Python-based Incident Resolution Recommendation System",
+    "description": "Created a machine learning recommendation system predicting optimal team assignment for IT incident resolution, reducing misrouted incidents and improving operational efficiency.",
+    "technologies": ["Python", "scikit-learn", "RNN", "SQL", "Tableau"],
+    "impact": "Achieved 96% accuracy in recommendations, decreasing resolution time and enhancing support team performance.",
+    "details": "Leveraged historical incident and resolution data with RNN enhancements to improve incident routing, reducing errors and improving first-time resolution rates."
+  },
+  {
+    "title": "Medical Affairs API & Azure Cloud Integration",
+    "description": "Engineered robust APIs and data pipelines for medical affairs data integration, utilizing Azure OpenAI and cloud services to improve technical scalability and stakeholder communication.",
+    "technologies": ["FastAPI", "Flask", "Azure Cognitive Services", "Azure Cloud"],
+    "impact": "Reduced manual PDF review efforts by 50% through automated extraction and interpretation of pharma documents, enhancing data accessibility and product robustness.",
+    "details": "Built and maintained scalable ETL pipelines integrating pharma datasets and implemented APIs enabling stakeholders to efficiently extract insights from complex document formats."
+  }
+
   ],
   "experience": [
-    {
-      "title": "Senior Data Scientist & Manager",
-      "company": "Tech Innovation Corp",
-      "period": "2022 - Present",
-      "description": "Leading a team of 8 data scientists and ML engineers, overseeing the development of AI/ML solutions that drive business growth and operational efficiency.",
-      "achievements": [
-        "Managed $2M+ ML infrastructure budget",
-        "Increased team productivity by 40% through process optimization",
-        "Delivered 15+ production ML models"
-      ]
-    },
-    {
-      "title": "Data Science Lead",
-      "company": "Analytics Solutions Ltd",
-      "period": "2020 - 2022",
-      "description": "Developed and deployed machine learning models for customer analytics and business intelligence, focusing on revenue optimization and cost reduction.",
-      "achievements": [
-        "Built ML models generating $5M+ additional revenue",
-        "Reduced customer churn by 25% through predictive analytics",
-        "Implemented automated ML pipeline reducing deployment time by 70%"
-      ]
-    },
-    {
-      "title": "Senior Data Scientist",
-      "company": "Data Insights Inc",
-      "period": "2018 - 2020",
-      "description": "Specialized in statistical modeling and advanced analytics, delivering insights that informed strategic business decisions across multiple departments.",
-      "achievements": [
-        "Developed predictive models improving forecast accuracy by 30%",
-        "Conducted A/B testing resulting in 20% conversion improvement",
-        "Mentored 5 junior data scientists"
-      ]
-    }
-  ],
+  {
+    "title": "Data Scientist Manager",
+    "company": "Inizio",
+    "period": "July 2022 - Present",
+    "description": "Leading development of NLP, machine learning, and large language model POCs to streamline workflows in the pharmaceutical sector. Managing analytics, data storytelling, and data integration pipelines that consolidate over 20 Pharma datasets.",
+    "achievements": [
+      "Scaled team from 2 to 10 members in 18 months, fostering collaboration and productivity",
+      "Implemented process improvements resulting in 70% reduction in process time and 50% efficiency boost",
+      "Deployed and fine-tuned Llama-3, Llama-2, and phi-3 models on Azure cloud enhancing clinical trial insights",
+      "Enabled stakeholders to reduce PDF review efforts by 50% through AI-driven interpretation of pharma documents"
+    ]
+  },
+  {
+    "title": "Interface Engineer II",
+    "company": "Oracle",
+    "period": "August 2021 - July 2022",
+    "description": "Led ML model POC development using NLP, scikit-learn, TensorFlow, and PyTorch. Designed and improved project frameworks to enhance interface development and reduce configuration time. Focused on predictive modeling within healthcare and pharmaceutical domains.",
+    "achievements": [
+      "Reduced interface design and development time by 30%, and application-specific configuration by 45%",
+      "Extracted insights from textual data reducing consultant efforts by 80%",
+      "Spearheaded analytics and optimization efforts to improve product performance"
+    ]
+  },
+  {
+    "title": "Interface Developer",
+    "company": "Providence India",
+    "period": "September 2020 - August 2021",
+    "description": "Developed and deployed ML models for predictive analytics and classification tasks. Collaborated with data scientists and engineers to define project objectives. Worked on Cerner proprietary software and customized SQL queries for data import and analysis.",
+    "achievements": [
+      "Conducted exploratory data analysis to inform feature engineering and modeling",
+      "Implemented dashboards and reports that boosted team performance using ServiceNow APIs, PowerBI, and Excel",
+      "Supported production environments and handled integration engine issues"
+    ]
+  },
+  {
+    "title": "Software Developer Senior Associate",
+    "company": "NTT DATA Services",
+    "period": "October 2017 - September 2020",
+    "description": "Owned complete project cycles including requirement analysis, design, coding, testing, and deployment. Built models to improve IT incident routing accuracy and developed visualization dashboards using Tableau and Python.",
+    "achievements": [
+      "Developed incident resolution model with 96% recommendation accuracy, currently enhancing with RNN",
+      "Delivered SLA dashboards and KPI breach reports supporting organizational accountability",
+      "Designed and tested interfaces enabling application data exchange, adopting Agile methodologies"
+    ]
+  }
+]
+,
   "contact": {
     "email": "vaibhav.tyagi@example.com",
-    "phone": "+91 9876543210",
-    "linkedin": "linkedin.com/in/vaibhav-tyagi-ds",
-    "github": "github.com/vaibhav-tyagi",
+    "phone": "+91 xxxxxxxxxx",
+    "linkedin": "linkedin.com/in/vaibhav-tyagi-analyst",
+    "github": "github.com/tyagivaibhav1305",
     "location": "India"
   }
 };
