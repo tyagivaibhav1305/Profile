@@ -98,8 +98,8 @@ const portfolioData = {
   ],
   contact: {
     email: "tyagivaibhav1305@gmail.com",
-    phone: "+91 9818197990",
-    linkedin: "https://www.linkedin.com/in/vaibhav-tyagi",
+    phone: "+91XXXXXXXXX",
+    linkedin: "https://www.linkedin.com/in/vaibhav-tyagi-analyst",
   },
 };
 
