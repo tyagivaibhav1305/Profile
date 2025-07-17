@@ -1,169 +1,265 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Vaibhav Tyagi | Portfolio</title>
-  <!-- Bootstrap 5 CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-4oV6NttuPAHyBs+K6TfGsZpDHK5vVsQt1zArhcXd1LSeX776BF3/f6/Dr7guP5AnbcWcCYwiVdc+XKzGwdr8AQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav Tyagi | Senior Data Scientist & Manager</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
-  <!-- Navigation -->
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#home">Vaibhav Tyagi</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav text-center">
-          <li class="nav-item">
-            <a class="nav-link active" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero / Home Section -->
-  <section id="home" class="hero d-flex align-items-center text-center text-white">
-    <div class="container">
-      <h1 id="hero-name" class="display-4 fw-bold mb-3"></h1>
-      <p id="hero-headline" class="lead mb-1"></p>
-      <p id="hero-location" class="mb-4"></p>
-      <div class="d-flex justify-content-center gap-3 flex-wrap">
-        <a id="linkedin-btn" href="#" class="btn btn-primary" target="_blank">
-          <i class="fab fa-linkedin me-2"></i>LinkedIn
-        </a>
-        <a id="email-btn" href="#" class="btn btn-outline-light">
-          <i class="fa fa-envelope me-2"></i>Email Me
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="py-5 bg-surface">
-    <div class="container">
-      <h2 class="mb-4">About</h2>
-      <p id="about-summary" class="fs-5"></p>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="py-5">
-    <div class="container">
-      <h2 class="mb-4">Skills</h2>
-      <div class="row">
-        <div class="col-md-6 mb-4">
-          <h4 class="mb-3">Core Skills</h4>
-          <div id="core-skills" class="d-flex flex-wrap gap-2"></div>
-        </div>
-        <div class="col-md-6 mb-4">
-          <h4 class="mb-3">Technical Stack</h4>
-          <div id="technical-skills" class="d-flex flex-wrap gap-2"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="py-5 bg-surface">
-    <div class="container">
-      <h2 class="mb-4">Projects</h2>
-      <div id="projects-container" class="row g-4"></div>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience" class="py-5">
-    <div class="container">
-      <h2 class="mb-4">Experience</h2>
-      <div id="experience-container" class="timeline"></div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-5 bg-surface">
-    <div class="container">
-      <h2 class="mb-4">Contact</h2>
-      <div class="row g-5">
-        <div class="col-md-5">
-          <p class="mb-2"><i class="fa fa-envelope me-2"></i><a id="contact-email" href="#" target="_blank"></a></p>
-          <p class="mb-2"><i class="fa fa-phone me-2"></i><span id="contact-phone"></span></p>
-          <p class="mb-2"><i class="fab fa-linkedin me-2"></i><a id="contact-linkedin" href="#" target="_blank">LinkedIn Profile</a></p>
-        </div>
-        <div class="col-md-7">
-          <form id="contact-form">
-            <div class="mb-3">
-              <label class="form-label" for="name">Name</label>
-              <input type="text" class="form-control" id="name" name="name" required />
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="logo-animation">
+                <div class="logo-circle"></div>
+                <div class="logo-text">VT</div>
             </div>
-            <div class="mb-3">
-              <label class="form-label" for="email">Email</label>
-              <input type="email" class="form-control" id="email" name="email" required />
-            </div>
-            <div class="mb-3">
-              <label class="form-label" for="message">Message</label>
-              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </form>
+            <div class="loading-text">Loading Portfolio...</div>
         </div>
-      </div>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="py-4 text-center bg-light">
-    <div class="container">
-      <small>&copy; <span id="current-year"></span> Vaibhav Tyagi. Hosted with <i class="fab fa-github"></i> GitHub Pages.</small>
+    <!-- Particle Background -->
+    <div id="particles-container"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Vaibhav Tyagi</a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-name">
+                    <span class="typing-text"></span>
+                    <span class="cursor">|</span>
+                </h1>
+                <p class="hero-title">Senior Data Scientist & Manager</p>
+                <p class="hero-description">Transforming data into actionable insights and leading high-performing analytics teams</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="95">0</div>
+                    <div class="stat-label">Python Proficiency</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="8">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">ML Models Deployed</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate about data science and AI innovation</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        Experienced data scientist and manager with expertise in statistical modeling, GenAI, and machine learning. 
+                        Skilled in Python, TensorFlow, Azure, and stakeholder management. Passionate about transforming data into 
+                        actionable insights and leading high-performing analytics teams.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-brain"></i>
+                            <span>AI & Machine Learning Expert</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-users"></i>
+                            <span>Team Leadership & Management</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>Cloud Platform Specialist</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Expertise across multiple domains</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-bars" id="technical-skills"></div>
+                </div>
+                <div class="skills-category">
+                    <h3>Management Skills</h3>
+                    <div class="skill-bars" id="management-skills"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Innovative solutions driving business impact</p>
+            </div>
+            <div class="projects-grid" id="projects-grid"></div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">Journey through data science leadership</p>
+            </div>
+            <div class="timeline" id="timeline"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's collaborate on your next data science project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>vaibhav.tyagi@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 9876543210</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>India</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/vaibhav-tyagi-ds" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/vaibhav-tyagi" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Vaibhav Tyagi. All rights reserved.</p>
+                <p>Built with modern web technologies | Hosted on GitHub Pages</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title"></h3>
+                <button class="modal-close" id="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p id="modal-description"></p>
+                <div class="modal-technologies" id="modal-technologies"></div>
+                <div class="modal-impact" id="modal-impact"></div>
+                <div class="modal-details" id="modal-details"></div>
+            </div>
+        </div>
     </div>
-  </footer>
 
-  <!-- Modals Container -->
-  <div id="modals-root"></div>
-
-  <!-- Bootstrap JS Bundle (includes Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Main JS -->
-  <script src="app.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="app.js"></script>
 </body>
 </html>
