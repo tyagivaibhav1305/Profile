@@ -565,7 +565,7 @@ function initAnimations() {
     onEnter: () => {
       gsap.from('.project-card', {
         y: 100,
-        opacity: 0.5,
+        opacity: 1,
         duration: 1,
         stagger: 0.2,
         ease: "power2.out"
